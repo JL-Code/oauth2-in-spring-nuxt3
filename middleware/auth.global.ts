@@ -1,6 +1,6 @@
 import { userManager } from "@/composables/UserManager";
 export default defineNuxtRouteMiddleware(async (to, from) => {
-  console.log("to", to.name, to);
+  // console.log("to", to.name, to);
   if (to.name === "UserInfo") {
     // auth
     const user = await userManager.getUser();

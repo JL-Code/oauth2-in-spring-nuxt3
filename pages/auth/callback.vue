@@ -25,7 +25,7 @@ userManager.events.addUserSessionChanged(() => {
 });
 // 这个事件会在用户加载时触发。
 userManager.events.addUserLoaded(() => {
-  alert("addUserLoaded 用户登录成功");
+  console.log("addUserLoaded 用户登录成功");
   router.push("/userinfo");
 });
 

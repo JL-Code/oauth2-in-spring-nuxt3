@@ -3,7 +3,7 @@ import {
   UserManagerSettings,
   WebStorageStateStore,
 } from "oidc-client-ts";
-import CookieStore from "./CookieStore";
+import CookieStore from "./CookieStorage";
 
 const OidcConfig: UserManagerSettings = {
   authority: "http://localhost:9000", // "http://localhost:9000",
@@ -19,7 +19,7 @@ const OidcConfig: UserManagerSettings = {
   automaticSilentRenew: false,
   monitorSession: true,
   loadUserInfo: true,
-  userStore: new WebStorageStateStore({ store: new CookieStore() }),
+  // userStore: new WebStorageStateStore({ store: new CookieStore() }),
 };
 
 export const userManager = new UserManager(OidcConfig);

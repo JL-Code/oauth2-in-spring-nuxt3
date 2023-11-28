@@ -1,6 +1,6 @@
 import cookie from "js-cookie";
 
-export default class CookieStore implements Storage {
+export default class CookieStorage implements Storage {
   constructor() {
     this.length = 0;
     this._store = new Map();
@@ -28,6 +28,7 @@ export default class CookieStore implements Storage {
   }
   setItem(key: string, value: string): void {
     // this._store.set(key, value);
+    console.debug(`setItem key:${key},value:{value}`);
     cookie.set(key, value, this._cookieOpts);
   }
 }
