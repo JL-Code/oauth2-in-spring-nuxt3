@@ -8,7 +8,7 @@ const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>
-  <div>
+  <div class="container mx-auto">
     <!-- <form>
       <select v-model="locale">
         <option value="en">en</option>
