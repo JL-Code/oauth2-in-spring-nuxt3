@@ -28,8 +28,10 @@ const getUserInfo = async () => {
 
 const showIdToken = async () => {
   const user = await userManager.getUser();
-  console.log("user.id_token", user.id_token);
-  alert(user.id_token);
+  if (user) {
+    console.log("user.id_token", user.id_token);
+    alert(user.id_token);
+  }
 };
 
 const getOidcAttributes = async () => {

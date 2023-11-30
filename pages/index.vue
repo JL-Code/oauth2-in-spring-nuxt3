@@ -8,7 +8,8 @@ const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>
-  <div class="container mx-auto">
+  <div class="mx-auto">
+    <div></div>
     <!-- <form>
       <select v-model="locale">
         <option value="en">en</option>
@@ -33,3 +34,21 @@ const switchLocalePath = useSwitchLocalePath();
     </p>
   </div>
 </template>
+
+<style>
+.bg-custom {
+  position: relative;
+  overflow-x: hidden;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(196, 70, 255, 0.32) 0%,
+      rgba(105, 81, 249, 0) 93%
+    ),
+    radial-gradient(
+      100% 100% at 100% 10%,
+      rgb(43, 71, 143) -50%,
+      rgba(0, 35, 55, 0) 62.6%
+    ),
+    rgb(5, 6, 34);
+}
+</style>
